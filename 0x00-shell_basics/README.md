@@ -1,1 +1,6 @@
-0-current
+0x00-shell_basics
+
+#!/bin/bash
+
+
+pwd
