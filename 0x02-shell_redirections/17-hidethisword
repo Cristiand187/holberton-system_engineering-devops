@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -print | greg ! bin /etc/passwd
+greg -v bin /etc/passwd
