@@ -6,7 +6,7 @@
 ![Bash](https://raw.githubusercontent.com/cristiand187/holberton-system_engineering-devops/master/TRFM.jpg)
 
 
-## :boocks: Projecs
+## :books: Projecs
 
 * [0x00. Shell, basics](https://github.com/Cristiand187/holberton-system_engineering-devops/tree/master/0x00-shell_basics)
 * [0x01. Shell, permissions](https://github.com/Cristiand187/holberton-system_engineering-devops/tree/master/0x01-shell_permissions)
