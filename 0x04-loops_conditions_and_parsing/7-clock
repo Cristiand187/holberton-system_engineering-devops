@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times
+HOUR=0
+while [ $HOUR -le 12 ]; do
+    echo "Hour: " $HOUR
+    MIN=1
+    while [ $MIN -lt 60 ]; do
+        echo $MIN
+        let MIN=MIN+1
+    done
+    let HOUR=HOUR+1
+done
