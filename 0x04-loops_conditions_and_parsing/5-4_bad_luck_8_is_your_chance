@@ -2,16 +2,15 @@
 # This script is displaying "Holberton School" 10 times
 CONTADOR=0
 while [  $CONTADOR -lt 10 ]; do
-    if [ $CONTADOR = 3 ] || [ $CONTADOR = 7 ]
+    if [ $CONTADOR = 3 ]
     then
-        if [ $CONTADOR = 4 ]
+        echo "bad luck"
+        elif [ $CONTADOR = 7 ]
         then
-            echo "bad luck"
-        else [ $CONTADOR = 8 ]
             echo "good luck"
-        fi
-    else
-        echo "Holberton School"
+        
+        else
+            echo "Holberton School"
     fi
     let CONTADOR=CONTADOR+1
 done
