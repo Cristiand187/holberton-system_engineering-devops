@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays To infinity and beyond indefinitely
+FLAG=1
+while [ $FLAG = 1 ]; do
+
+    echo "To infinity and beyond"
+    sleep 2
+
+done
