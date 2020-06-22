@@ -2,5 +2,5 @@
 # Write a Bash script that displays a list of currently running processes.
 PCS=$(pgrep -f 4-to_infinity_and_beyond)
 for pid_ in $PCS; do
-    kill $pid_
+    kill "$pid_"
 done
