@@ -22,12 +22,12 @@ int infinite_while(void)
 int main(void)
 {
 	int i = 0;
-	pid_t id = 0;
+	pid_t id_p = 0;
 
 	for (i = 0; i < 5; i++)
 	{
-		id = fork();
-		if (id == 0)
+		id_p = fork();
+		if (id_p == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
 			exit(0);
