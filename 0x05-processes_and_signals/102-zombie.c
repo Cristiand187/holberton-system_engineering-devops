@@ -21,8 +21,8 @@ int infinite_while(void)
  */
 int main(void)
 {
-	int i = 0, 
-	pid_t id;
+	int i = 0;
+	pid_t id = 0;
 
 	for (i = 0; i < 5; i++)
 	{
