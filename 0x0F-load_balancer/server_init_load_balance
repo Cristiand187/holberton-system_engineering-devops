@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configuracion inicial del servidor load balance
+
+echo "$1"
+./0-transfer_file 1-install_load_balancer "$1" ubuntu  ~/.ssh/holberton
+ssh ubuntu@"$1" -i ~/.ssh/holberton 'sudo ./1-install_load_balancer'
+curl -sI "$1"
+curl -sI "$1"

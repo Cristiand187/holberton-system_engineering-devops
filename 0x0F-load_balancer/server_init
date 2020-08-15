@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# configuracion inicial del servidor
+
+echo "$1"
+./0-transfer_file 0-custom_http_response-header "$1" ubuntu  ~/.ssh/holberton
+ssh ubuntu@"$1" -i ~/.ssh/holberton 'sudo ./0-custom_http_response-header'
+curl -sI "$1" | grep X-Served-By
