@@ -8,9 +8,8 @@ echo "Holberton School" > /usr/share/nginx/html/index.html
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 
 printf %s "server {
-    listen 80 default_server;
+    listen 80;
     listen [::]:80 default_server;
-    add_header X-Served-By 1729-web-02;
     root   /usr/share/nginx/html;
     index  index.html index.htm;
     location /redirect_me {
