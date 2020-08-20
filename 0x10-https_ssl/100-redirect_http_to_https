@@ -53,6 +53,6 @@ frontend www-https
     default_backend web-backend
 
 backend web-backend
-    redirect scheme https if !{ ssl_fc }
+    http-request redirect scheme https code 301 if !{ ssl_fc }
     server 1729-web-01 35.196.67.80:80 check
     server 1729-web-02 34.73.69.148:80 check
