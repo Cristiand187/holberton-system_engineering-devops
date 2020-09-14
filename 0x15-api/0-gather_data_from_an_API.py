@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     titles = ""
     for item in completed:
-        titles += '\n\t{}'.format(item.get('title', ''))
+        titles += '\n\t {}'.format(item.get('title', ''))
 
     if not titles:
         output
