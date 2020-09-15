@@ -11,9 +11,6 @@ if __name__ == "__main__":
     """The script must accept an integer as a
     parameter, which is the employee ID"""
 
-    if len(sys.argv) < 2:
-        print("Usage: ./0-gather_data_from_an_API.py <employee_id>")
-        exit(1)
     user_id = sys.argv[1]
     filename = user_id + ".csv"
 
