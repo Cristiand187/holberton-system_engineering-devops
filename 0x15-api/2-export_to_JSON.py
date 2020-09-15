@@ -5,7 +5,6 @@ import requests
 import sys
 import json
 
-user_endpoint = "https://jsonplaceholder.typicode.com/users/"
 
 if __name__ == "__main__":
     """The script must accept an integer as a
