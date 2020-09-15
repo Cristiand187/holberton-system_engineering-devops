@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """Write a Python script that, using this REST API, for a given
 employee ID, returns information about his/her TODO list progress."""
-import requests
-from sys import argv
 import csv
+import requests
+import sys
+
 
 if __name__ == "__main__":
     """The script must accept an integer as a
     parameter, which is the employee ID"""
 
-    user_id = argv[1]
+    user_id = sys.argv[1]
     filename = user_id + ".csv"
 
     todos = requests.get('https://jsonplaceholder.typicode.com/todos/')
