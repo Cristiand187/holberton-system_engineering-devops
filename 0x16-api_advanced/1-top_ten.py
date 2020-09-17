@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-'''function that queries the Reddit
-API and returns the number of subscribers'''
+'''function that queries the Reddit API
+and prints the titles of the first 10 hot posts listed'''
 import requests
 
 
 def top_ten(subreddit):
-    '''Gets number of reddit subscribers'''
-    url = 'http://reddit.com/r/{}/hot.json'.format(subreddit)
+    '''top 10 hot posts '''
+    url = 'http://reddit.com/r/{}/hot.json?limit=10'.format(subreddit)
     headers = {'User-agent': 'Chrome/85.0.4183.102'}
     response = requests.get(url=url, headers=headers)
     if response.status_code != 200:
