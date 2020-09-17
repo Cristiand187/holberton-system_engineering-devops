@@ -10,6 +10,7 @@ def top_ten(subreddit):
     headers = {'User-agent': 'Chrome/85.0.4183.102'}
     response = requests.get(url=url, headers=headers)
     if response.status_code != 200:
+        print(None)
         return
 
     for i in range(10):
